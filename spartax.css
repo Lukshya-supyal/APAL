@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: url('https://example.com/path-to-your-high-quality-image.jpg') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover; 
+    transition: background-color 0.5s ease; 
+}
+
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+/* main Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center;
+    color: white; 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    animation: fadeIn 1s ease; 
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8)); /* Colorful gradient */
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure nav is above other content */
+    transition: background-color 0.3s; /* Smooth transition for nav background */
+}
+
+nav:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 204, 255, 1)); /* Darker gradient on hover */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Form Styles */
+form {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 204, 204, 0.9)); /* Light gradient for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Transition for form */
+}
+
+form:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Button Styles */
+button {
+    background: linear-gradient(90deg, #007bff, #00ff7f); /* Colorful gradient for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Transition for button */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #0056b3, #00cc66); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Dark Mode Toggle Button */
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #ffcc00, #ff6699); /* Colorful gradient for toggle button */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background: linear-gradient(90deg, #e6b800, #ff3385); /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh; 
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+.logos-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.logos-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.logo-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+
+}
+
+.logo-container a {
+    display: inline-block;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly lower */
+    animation: fadeInUp 0.5s forwards; /* Animation for logos */
+}
+
+.logo-container img {
+    max-width: 150px; /* Adjust the size as needed */
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Delay animation for each logo */
+.logo-container a:nth-child(1) { animation-delay: 0.1s; }
+.logo-container a:nth-child(2) { animation-delay: 0.2s; }
+.logo-container a:nth-child(3) { animation-delay: 0.3s; }
+.logo-container a:nth-child(4) { animation-delay: 0.4s; }
+.logo-container a:nth-child(5) { animation-delay: 0.5s; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Bright gradient background */
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61; /* Bright coral color */
+    padding: 20px;
+    
+    color: white;
+}
+
+h1, h2 {
+    color: #fff; /* White text for headings */
+}
+
+.logos-section {
+    
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between logos */
+   
+}
+.logo-container 
+
+
+.logo-container a {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #ff6f61; /* Bright border around logos */
+    border-radius: 10px; /* Rounded corners for logos */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delay for each logo */
+.logo-container a:nth-child(1) { animation-delay: 0.1s; }
+.logo-container a:nth-child(2) { animation-delay: 0.2s; }
+.logo-container a:nth-child(3) { animation-delay: 0.3s; }
+.logo-container a:nth-child(4) { animation-delay: 0.4s; }
+.logo-container a:nth-child(5) { animation-delay: 0.5s; }
+
+/* Footer styles */
+footer {
+    background-color: #ff6f61; /* Bright coral color */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern font style */
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+header {
+    background-color: #FF6F61; /* Coral color */
+    padding: 20px;
+    
+    color: white;
+}
+
+h1, h2 {
+    color: #6B5B95; /* Purple for headings */
+}
+
+.logos-section {
+    
+    padding: 40px 20px;
+    background-color: #FFFFFF; /* White background for logos section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between logos */
+}
+
+.logo-container a {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 3px solid #88B04B; /* Green border around logos */
+    border-radius: 10px; /* Rounded corners for logos */
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delay for each logo */
+.logo-container a:nth-child(1) { animation-delay: 0.1s; }
+.logo-container a:nth-child(2) { animation-delay: 0.2s; }
+.logo-container a:nth-child(3) { animation-delay: 0.3s; }
+.logo-container a:nth-child(4) { animation-delay: 0.4s; }
+.logo-container a:nth-child(5) { animation-delay: 0.5s; }
+
+/* Footer styles */
+footer {
+    background-color: #6B5B95; /* Purple footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+        header {
+            
+            background-image: url('images/pexels-tara-winstead-8386440.jpg')
+            
+        }
+
+        .main h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 1em;
+        }
+        .main form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .main form label {
+            color: #555;
+        }
+        .main form input, .main form textarea {
+            width: 100%;
+            padding: 0.75em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .main form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 1em;
+            transition: background-color 0.3s;
+        }
+        .main form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><a href="project.html">Back to Home</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hed2"> <br>Contact Us<div>
+    </header>
+
+    <div class="main">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <footer>
+        <div class="copy" style="color: black;">&copy; 2024 Copyright. All rights reserved.</div>
+    </footer>
+</body>
+</html>

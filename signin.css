@@ -1,0 +1,177 @@
+*{
+    font-family: 'poppins', sans-serif;
+    transition: all;
+    transition-duration: 0.3s;
+}   
+body{
+    display: grid;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #b8c6db33; 
+}
+.page-sep{
+    display: grid;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    height: auto
+}
+
+.container{
+    display: grid;
+}
+
+form{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    display: grid;
+    padding: 50px 50px 30px;
+    background-color: #252424e6;
+    border-radius: 30px;
+    height: 80vh;
+    width: 335px;
+    border: 2px solid white;
+    box-shadow: 0 30px 30px -5px #161212e6;
+}
+
+
+.row-4{
+    grid-template-rows: 1.5fr repeat(4, 1fr);
+}
+
+.row-5{
+    grid-template-rows: 1.5fr repeat(5, 1fr);
+}
+
+.form-child{
+    margin: auto;
+}
+
+.lb{
+    margin: auto;
+    border-radius: 10px;
+}
+#logo{
+    width: 250px;
+    
+}
+.icon{
+    width: 1.5em;
+    position: absolute;
+    padding: 10px 0 0 0;
+
+}
+
+.credential{
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    height: 45px;
+    width: 280px;
+    background: 0 0;
+    padding: 0 0 0 35px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sub{
+    width: 140px;
+    padding-left: 5px;
+    margin-right: 20px;
+    position: relative;
+    left: 5px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    border-width: 2px;
+}
+
+.submit{
+    background: lightgray;
+    border: none;
+    padding: 0.8rem 2em 0.8rem 2em;
+    border-radius: 2em;
+    font: 16px 'poppins', sans-serif;
+    color: black;
+    cursor: pointer;
+}
+
+.submit:hover{
+
+    background-color: #47ec8b;
+    color: white;
+    border: 1px solid white;
+}
+
+.foot{
+    margin: auto;
+    font: 12px 'poppins', sans-serif;
+    cursor: pointer;
+}
+
+.foot:hover{
+    color: #47ec8b;
+}
+
+#or{
+    position: absolute;
+    top: 76%;
+    left: 47%;
+    color: white;
+}
+#or::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90px;
+    top: 12px;
+    left: -90px;
+    background-color: lightgray;  
+}
+#or::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 90px;
+    top: 12px;
+    right: -90px;
+    background-color: lightgrey;  
+}
+#gLogo{
+    height: 20px;
+    width: 20px;
+    padding-right: 20px;
+    padding-top: 4px;
+}
+.logoB{
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: none;
+    text-decoration: none;
+}
+.logoB1{
+    margin: 0px -5px
+}

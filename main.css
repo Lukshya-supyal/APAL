@@ -1,0 +1,74 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.main{
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(232, 233, 221);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.new{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.img-box{
+    position: relative;
+    transition: 0.5s;
+    height: 280px;
+    width: 450px;
+    border-radius: 10px;    
+}
+
+.img-box img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.img-box:hover{
+    box-shadow: 5px 5px 5px rgb(0, 251, 255);
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.price{
+    border: 2px solid rgb(255, 255, 6);
+    font-size: larger;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    left: 10px;
+    color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    transition: 1s;
+}
+
+.price:hover{
+    background-color: rgba(25, 18, 18, 0.987);
+    transform: translateY(-5px);
+}
+
+.boat-name{
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    font-weight: bold;
+    color: rgb(242, 255, 0);
+    font-size: xx-large;
+
+}

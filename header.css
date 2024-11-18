@@ -1,0 +1,25 @@
+header{
+    border: 1px solid pink;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,0.5)), url("ghost_aerial_view.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    padding: 110px;
+}
+
+header div{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hed1{
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(154, 23, 255);
+}
+
+.hed2{
+    color: rgba(251, 255, 4, 0.893);
+    text-shadow: 3px 3px 3px rgb(232, 1, 1);
+}
